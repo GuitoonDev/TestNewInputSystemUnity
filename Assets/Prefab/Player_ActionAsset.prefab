@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3298404961004821782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7605168913154783415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cdf505f28820b4296edbc0ea2e47a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 250
+  jumpForce: 700
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  collisionRadius: 0.1
+  groundOffset: {x: 0, y: 0}
+  moveAxisAction:
+    m_Name: Move Axis
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b3c1f0e7-b0b0-4de5-b568-27ff972c7117
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  jumpButtonAction:
+    m_Name: Jump Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2303d2b9-5068-437e-9319-0f51ca87d79f
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  slashButtonAction:
+    m_Name: Slash Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 36c51400-5859-4743-9d30-e5d8da6f44fc
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+  debugButtonAction:
+    m_Name: Debug Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: b9906d1c-8e72-4754-b692-2c0857b631f7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+--- !u!1001 &7591560827234578758
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 58644156082899441, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Player_ActionAsset
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 58644156082899450, guid: 1441fb6352a2fb746a258afad1267e4b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1441fb6352a2fb746a258afad1267e4b, type: 3}
+--- !u!1 &7605168913154783415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 58644156082899441, guid: 1441fb6352a2fb746a258afad1267e4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7591560827234578758}
+  m_PrefabAsset: {fileID: 0}

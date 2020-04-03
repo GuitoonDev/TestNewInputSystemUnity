@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6292983499967586656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8542628095689911067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3533da5fcc22074e862e51e758a4b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 250
+  jumpForce: 700
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  collisionRadius: 0.1
+  groundOffset: {x: 0, y: 0}
+  moveAxisAction:
+    m_Name: Move Axis
+    m_Type: 0
+    m_ExpectedControlType: Axis
+    m_Id: 1833979a-246f-47b3-832e-2c83e89e608e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 95e2d400-5dc8-4221-973d-34445cfef94d
+      m_Path: <Gamepad>/leftStick/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Axis
+      m_Flags: 0
+    - m_Name: Direciton X
+      m_Id: 337c48d5-0c90-4f82-9cfd-a318acb73a0f
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Axis
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: edb26509-b2d2-432e-9bc2-a356770ec8ae
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Axis
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 57ec04da-8cbd-4c74-a713-2a4d3b9648d0
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Axis
+      m_Flags: 8
+  jumpButtonAction:
+    m_Name: Jump Button
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 2e2519a4-2649-4a82-8836-93d82a9a292d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: aa17ab40-1075-4824-86e7-1905a0cdcdb1
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Jump Button
+      m_Flags: 0
+  slashButtonAction:
+    m_Name: Slash Button
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: fae8ec23-c636-4267-9d67-f8d51cb38c30
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f1178ef7-8630-4e42-b641-30c16f8e5713
+      m_Path: <Gamepad>/buttonWest
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Slash Button
+      m_Flags: 0
+  debugButtonAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 7057cf9b-2612-4e8f-935d-4d936c633816
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+--- !u!1001 &8529213455031804650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 58644156082899441, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_Name
+      value: Player_Action
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 58644156082899447, guid: 1441fb6352a2fb746a258afad1267e4b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 58644156082899450, guid: 1441fb6352a2fb746a258afad1267e4b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1441fb6352a2fb746a258afad1267e4b, type: 3}
+--- !u!1 &8542628095689911067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 58644156082899441, guid: 1441fb6352a2fb746a258afad1267e4b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8529213455031804650}
+  m_PrefabAsset: {fileID: 0}
